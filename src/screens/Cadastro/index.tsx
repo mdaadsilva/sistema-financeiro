@@ -14,31 +14,26 @@ import CampoTexto from "../../componentes/CampoTexto/index.js";
 import Fieldset from "../../componentes/Fieldset/index.js";
 import Label from "../../componentes/Label/index.js";
 import { IUsuario } from "../../types/index.ts";
-import { criarUsuario } from "../../api/index.ts";
-
+import { useAppContext } from "../../context/AppContext.tsx";
 
 const Cadastro = () => {
-  const [form, setForm] = useState<Omit<IUsuario, "id">>({
+  const { criaUsuario } = useAppContext();
+  const [form, setForm] = useState<Omit<IUsuario, "id" | "orcamentoDiario">>({
     nome: "",
     renda: 0,
   });
 
-  const AoDigitarNoCampoTexto = (campo: "nome" | "renda", valor: string) =>{
-    setForm((prev) => ({...prev, [campo]: valor }));
-  }
-  
+  const aoDigitarNoCampoTexto = (campo: "nome" | "renda", valor: string) => {
+    setForm((prev) => ({ ...prev, [campo]: valor }));
+  };
+
   const navigate = useNavigate();
 
   const aoSubmeterFormulario = async (evento: React.FormEvent) => {
     evento.preventDefault();
-    try {
-        const novoUsuario = await criarUsuario(form);
-        console.log(novoUsuario);
-    } catch (err) {
-        console.log(err);
-    }
+    criaUsuario(form);
     navigate("/home");
-};
+  };
 
   return (
     <Section>
@@ -57,9 +52,9 @@ const Cadastro = () => {
                 type="text"
                 name="nome"
                 value={form.nome}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
-                AoDigitarNoCampoTexto("nome", e.target.value)
-              }
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  aoDigitarNoCampoTexto("nome", e.target.value)
+                }
               />
             </Fieldset>
             <Fieldset>
@@ -68,8 +63,9 @@ const Cadastro = () => {
                 type="text"
                 name="renda"
                 value={form.renda}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
-                AoDigitarNoCampoTexto("renda", e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  aoDigitarNoCampoTexto("renda", e.target.value)
+                }
               />
             </Fieldset>
           </Form>

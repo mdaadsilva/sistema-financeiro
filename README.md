@@ -1,43 +1,64 @@
-![Descricao da sua imagem](thumb-react-ts.png)
+![PoupApp](thumb.png)
 
-# Luz e Cena
+# 💰 PoupApp
 
-Landing page de um site focado em cinema, que exibe os filmes em cartaz e que ainda vão estrear permitindo selecionar localidade, buscar filmes pelo título, se inscrever para receber informações e muito mais.
+O PoupApp é uma plataforma de gerenciamento financeiro voltada para ajudar usuários a organizar suas finanças. Focado na simplicidade, o PoupApp permite que os usuários acompanhem seus gastos, definam metas financeiras e visualizem seu progresso através de gráficos dinâmicos. 
+
+Com funcionalidades que incentivam o controle de despesas e a organização do orçamento diário, o PoupApp se torna o parceiro ideal para quem busca saúde financeira e realização de objetivos pessoais.
+
+<p align="center">
+  <img src="./poupapp-home.png" alt="Página Inicial" width="30%" style="vertical-align: top; margin-right: 20px;" />
+</p>
 
 ## 🔨 Funcionalidades do projeto
 
-A página possui um cabeçalho, um banner, uma lista de filmes, uma seção de newsletter e um rodapé. Os filmes são retornados de uma API's local usando o JSON server. Possui a funcionalidade de filtrar os filmes no campo de busca por título.
+O PoupApp oferece as seguintes funcionalidades:
 
-<p align="center">
-  <img src="./img1.png" alt="Tela desktop" width="50%" style="vertical-align: top; margin-right: 20px;" />
-  <img src="./img2.png" alt="Tela desktop" width="50%" style="vertical-align: top; margin-right: 20px;"/>
-</p>
+- Acompanhar o orçamento diário e manter o controle das suas despesas.
+- Realizar transações de maneira prática, adicionando despesas e receitas.
+- Analisar seus gastos por meio de gráficos dinâmicos, categorizando as despesas para melhor entendimento.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-As técnicas e tecnologias utilizadas pra isso são:
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- `React`: principal biblioteca para construção da interface
-- `Typescript`: para adicionar tipagem estática na aplicação
-- `Figma`: Protótipo de design da página
-- `JSON server`: para simular uma api local
-- `classnames`: para lidar com classes CSS e estilização dinâmica
-- `react-icons`: biblioteca de ícones do React
-- `CSS modules`: para escrever css no React
+- `Typescript` - Linguagem que adiciona tipagem estática ao JavaScript.
+- `React.js` - Biblioteca para construção de interfaces dinâmicas.
+- `Vite` - Ferramenta de construção rápida para desenvolvimento com JavaScript moderno.
+- `Styled-components` - Para estilização de componentes com CSS-in-JS.
+- `Context API` - Gerenciamento de estado de forma reativa.
+- `React Router` - Para navegação entre páginas da aplicação.
+- `Recharts` - Para criação e visualização de gráficos.
+- `Figma` - Para prototipagem e design visual do projeto.
 
-## 📁 Acesso ao projeto
-
-Você pode [acessar o código fonte do projeto inicial](https://github.com/NeiltonSeguins/4472-react-ts) ou [baixá-lo](https://github.com/NeiltonSeguins/4472-react-ts/archive/refs/heads/aula-01.zip). Se você quiser acessar o figma do projeto, só [clicar neste link](https://www.figma.com/community/file/1464265240934231932).
+E outras dependências e ferramentas auxiliares.
 
 ## 🛠️ Abrir e rodar o projeto
 
-Após baixar o projeto, você pode abri-lo no Visual Studio Code. Para isso, siga os passos abaixo:
+Para rodar o projeto em sua máquina local, siga estes passos:
 
-1. No menu superior do VS Code, clique em:
-   * **File > Open Folder** (ou uma opção similar).
-2. Procure o local onde o projeto foi salvo e selecione a pasta (se o projeto foi baixado como um arquivo ZIP, será necessário extraí-lo antes).
-3. Clique em **OK**.
+1. Baixe o repositório do projeto para o seu computador.
+
+2. Navegue até a pasta do projeto, extraia os arquivos e abra no seu editor de código favorito. 
+
+3. Instale as dependências executando:
+
+    ```bash
+    npm install
+    ```
+
+4. Para iniciar o servidor de desenvolvimento, utilize o comando:
+
+    ```bash
+    npm run dev
+    ```
+
+5. O projeto estará disponível em http://localhost:5173.
 
 ## 📚 Mais informações do curso
 
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br) que desenvolve o projeto desde o começo!
+Gostou do projeto e quer conhecer mais?
+
+O design e protótipo deste projeto podem ser encontrados [aqui](https://www.figma.com/community/file/1468989433664551328). Este projeto é fictício e sem fins lucrativos. 
+
+Aproveite o desenvolvimento e aprimoramento do PoupApp!

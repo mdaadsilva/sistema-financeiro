@@ -1,20 +1,39 @@
 {
   "usuarios": [
     {
-      "id": "86bb",
-      "nome": "Martin de Almeida",
-      "renda": "2000"
-    },
-    {
-      "id": "202e",
-      "nome": "Eduardo",
-      "renda": "1000"
-    },
-    {
-      "id": "1ec9",
-      "nome": "Martin de Almeida",
-      "renda": "5000"
+      "id": "52e5",
+      "nome": "Neilton Seguins",
+      "renda": "5000",
+      "orcamentoDiario": 156.66666666666666
     }
   ],
-  "transacoes": []
+  "transacoes": [
+    {
+      "id": "6ec9",
+      "nome": "Livro",
+      "valor": 40,
+      "tipo": "despesa",
+      "categoria": "Estudos",
+      "data": "2025-02-06",
+      "userId": "52e5"
+    },
+    {
+      "id": "bd67",
+      "nome": "Pix",
+      "valor": 40,
+      "tipo": "receita",
+      "categoria": "Pagamentos",
+      "data": "2025-02-06",
+      "userId": "52e5"
+    },
+    {
+      "id": "e428",
+      "nome": "Pirulito",
+      "valor": 10,
+      "tipo": "despesa",
+      "categoria": "Alimentação",
+      "data": "2025-02-06",
+      "userId": "52e5"
+    }
+  ]
 }
