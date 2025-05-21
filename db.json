@@ -1,39 +1,36 @@
 {
   "usuarios": [
     {
-      "id": "52e5",
-      "nome": "Neilton Seguins",
-      "renda": "5000",
-      "orcamentoDiario": 156.66666666666666
+      "id": "7363",
+      "nome": "Martin de Almeida",
+      "renda": "8000",
+      "orcamentoDiario": 236.66666666666669
+    },
+    {
+      "id": "d0f3",
+      "nome": "Eduardo",
+      "renda": "1000",
+      "orcamentoDiario": 33.333333333333336
     }
   ],
   "transacoes": [
     {
-      "id": "6ec9",
-      "nome": "Livro",
-      "valor": 40,
-      "tipo": "despesa",
-      "categoria": "Estudos",
-      "data": "2025-02-06",
-      "userId": "52e5"
-    },
-    {
-      "id": "bd67",
-      "nome": "Pix",
-      "valor": 40,
-      "tipo": "receita",
-      "categoria": "Pagamentos",
-      "data": "2025-02-06",
-      "userId": "52e5"
-    },
-    {
-      "id": "e428",
-      "nome": "Pirulito",
+      "id": "279a",
+      "nome": "Minecraft",
       "valor": 10,
       "tipo": "despesa",
+      "categoria": "Jogo",
+      "data": "2025-05-21",
+      "userId": "7363"
+    },
+    {
+      "id": "237a",
+      "nome": "Açai",
+      "valor": 20,
+      "tipo": "despesa",
       "categoria": "Alimentação",
-      "data": "2025-02-06",
-      "userId": "52e5"
+      "data": "2025-05-21",
+      "userId": "7363"
     }
   ]
 }
